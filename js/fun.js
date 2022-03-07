@@ -50,7 +50,7 @@ const computerAI = () => {
                                 myScore[i][j] += 400
                                 break
                             case 3: 
-                                myScore[i][j] += 800
+                                myScore[i][j] += 2000
                                 break
                             case 4:
                                 myScore[i][j] += 10000
@@ -77,16 +77,16 @@ const computerAI = () => {
                         // }
                         switch(computerWin[k]){
                             case 1:
-                                computerScore[i][j] += 250
+                                computerScore[i][j] += 220
                                 break
                             case 2:
-                                computerScore[i][j] += 450
+                                computerScore[i][j] += 420
                                 break
                             case 3: 
-                                computerScore[i][j] += 850
+                                computerScore[i][j] += 2200
                                 break
                             case 4:
-                                computerScore[i][j] += 15000
+                                computerScore[i][j] += 12000
                                 break
                         }
                     }
@@ -123,7 +123,7 @@ const computerAI = () => {
     for(let i=0;i<count;i++){
         if(wins[x][y][i]){
             computerWin[i]++
-            if(myWin[i]==5){
+            if(computerWin[i]==5){
                 title.innerHTML = '很遗憾，计算机获胜了~~~~'
                 isOver=true
             }
