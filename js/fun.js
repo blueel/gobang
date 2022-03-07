@@ -42,12 +42,10 @@ const computerAI = () => {
                     if(wins[i][j][k]){
                         switch(myWin[k]){
                             case 1:
-                                {
                                     myScore[i][j] += 200
                                     break
-                                }
                             case 2:
-                                myScore[i][j] += 400
+                                myScore[i][j] += 800
                                 break
                             case 3: 
                                 myScore[i][j] += 2000
@@ -56,25 +54,6 @@ const computerAI = () => {
                                 myScore[i][j] += 10000
                                 break
                         }
-                        // if(myWin[k]==1){
-                        //     myScore[i][j] += 200
-                        // }else if(myWin[k]==2){
-                        //     myScore[i][j] += 400
-                        // }else if(myWin[k]==3){
-                        //     myScore[i][j] += 800
-                        // }else if(myWin[k]==4){
-                        //     myScore[i][j] += 10000
-                        // }
-
-                        // if(computerWin[k]==1){
-                        //     computerScore[i][j] += 250
-                        // }else if(computerWin[k]==2){
-                        //     computerScore[i][j] += 450
-                        // }else if(computerWin[k]==3){
-                        //     computerScore[i][j] += 850
-                        // }else if(computerWin[k]==4){
-                        //     computerScore[i][j] += 15000
-                        // }
                         switch(computerWin[k]){
                             case 1:
                                 computerScore[i][j] += 220
